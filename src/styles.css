@@ -1,8 +1,348 @@
-/* You can add global styles to this file, and also import other style files */
-body{
-    padding: 0;
-    margin: 0;
+/* Global Styles */
+body, html {
     height: 100%;
-    width: 100%;
-    background-color: cadetblue;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
 }
+
+/* Main Content Container */
+.w3-content {
+    max-width: 1600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header.w3-container {
+    background-color: white;
+    padding: 48px 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.w3-xxlarge {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+header h6 {
+    font-size: 18px;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Image Header Styling */
+.w3-display-container {
+    position: relative;
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.w3-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.w3-display-left {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 10px;
+}
+
+.w3-display-left h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.w3-xxlarge {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+/* .button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: fixed;
+    margin-top: 0px;
+    margin: 5px;
+  } */
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    /* max-width: 400px; */
+  }
+  
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container .button {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f4511e;
+    color: white;
+    font-size: 20px;
+    padding: 12px 26px;
+    border: none;
+    cursor: pointer;
+    margin-left: 650px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+
+/* Blog Entries */
+.w3-col.l8 {
+    margin-bottom: 20px;
+}
+
+.w3-container.w3-white {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.w3-container h3 {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+}
+
+.w3-container h5 {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.w3-container img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.w3-justify p {
+    line-height: 1.8;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Sidebar Styles */
+.w3-col.l4 {
+    margin-bottom: 20px;
+}
+
+.w3-white.w3-margin {
+    margin-bottom: 20px;
+}
+
+.w3-white img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.w3-container.w3-black {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+}
+
+.w3-container.w3-black h4 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.w3-container.w3-black p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Popular Posts Styles */
+.w3-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.w3-ul li {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.w3-ul li img {
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.w3-large {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.w3-ul li span {
+    display: block;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Tags Section */
+.w3-tag {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.w3-tag.w3-light-grey {
+    background-color: #ddd;
+    color: #333;
+}
+
+/* Inspiration Section */
+.w3-row-padding img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Follow Us Icons */
+.w3-xlarge i {
+    margin-right: 20px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.w3-xlarge i:hover {
+    color: #000;
+}
+
+/* Footer Styles */
+/* app-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+app-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+app-footer a:hover {
+    text-decoration: underline;
+} */
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .w3-jumbo {
+        font-size: 48px;
+    }
+
+    .w3-display-left h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .w3-jumbo {
+        font-size: 36px;
+    }
+
+    .w3-display-left h1 {
+        font-size: 24px;
+    }
+
+    .w3-tag {
+        font-size: 10px;
+        padding: 6px 12px;
+    }
+}
+
+/* Container for Blog and Sidebar */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Blog entries column */
+  .blog-entries {
+    flex: 2; /* This takes up 2/3 of the available space */
+    margin-bottom: 20px;
+  }
+  
+  /* Sidebar column */
+  .sidebar {
+    flex: 1; /* This takes up 1/3 of the available space */
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for cards and content */
+  .w3-container {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column; /* Stacks the columns on smaller screens */
+    }
+  }
+  
