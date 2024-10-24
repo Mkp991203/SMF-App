@@ -9,7 +9,8 @@ import { HomepageComponent } from './Home/homepage/homepage.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './Home/header/header.component';
 import { FooterComponent } from './Home/footer/footer.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './Dashboard/components/dashboard/dashboard.component'
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http'
     HomepageComponent,
     HeaderComponent,
     FooterComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
